@@ -1,0 +1,33 @@
+﻿@{
+  ViewData["title"] = "Início";
+}
+
+<div class="col-md-12 col-lg-12">
+  <h2 class="h5 page-title">Campeonato de Filmes</h2>
+  <p class="text-muted">Selecione 8 filmes que você deseja que entre na competição e depois pressione o botão 'Gerar meu Campeonato' para prosseguir.</p>
+  <div class="card shadow">
+    <div class="card-header">
+      <strong class="card-title">Fase de Seleção</strong>
+      <button type="button" id="getMoviesButton" class="btn float-right mb-2 btn-primary btn-sm">
+        Gerar meu Campeonato
+      </button>
+    </div>
+    <div class="card-body my-n2">
+      <table class="table table-striped table-hover table-borderless" id="movieDataTable" style="width:100%">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Ano</th>
+            <th>Nota</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+</div>
+
+@section Scripts {
+  <script src="~/js/home/movieDataTable.js"></script>
+  <script src="~/js/home/getMovies.js"></script>
+}
